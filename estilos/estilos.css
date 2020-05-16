@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+#contenedor {
+    background: url(../imagenes/fondo.jpg) no-repeat center center;
+    width: 1024px;
+ margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    background: url(../imagenes/logo.png) no-repeat 0 20px;
+    width: 400px;
+    height: 160px;
+    margin: auto;
+    text-indent: -150px;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: 'bebas_kairegular';
+    src: url('../fuentes/fuenbebaskai-webfont.woff2') format('woff2'),
+        url('../fuentes/bebaskai-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+nav {
+    text-align: center;
+    font-family: 'bebas_kairegular';
+    font-size: 20px;
+    padding: 10px;
+    margin: 20px 0 40px 0;
+}
+
+nav ul li {
+    background: url(../imagenes/madera2.jpg);
+    border: 3px solid #bd998d;
+    width: 160px;
+    list-style: none;
+    margin: 0 10px;
+    display: inline-block;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    color: #bd998d;
+    padding: 10px;
+
+}
+
+nav ul li a:hover {
+    background: url(../imagenes/madera1.jpg);
+}
+
+.historia {
+    background-color: #bd998d;
+    color: #57302C;
+    width: 400px;
+    height: 400px;
+    padding: 30px;
+    margin-left: 40px;
+    display: inline-block;
+    vertical-align: top;
+    animation: entrada 2s;
+
+}
+
+.historia:hover {
+    background-color: #a08278;
+}
+
+h2 {
+    color: white;
+    font-family: 'bebas_kairegular';
+    padding: 5px 0 20px 0;
+    font-size: 40px;
+}
+
+.wolves {
+    display: inline-block;
+    vertical-align: bottom;
+    animation: entrada2 2s;
+}
+
+.cafe {
+   text-align: center;
+    margin-top: 40px;
+    animation: entrada3 2s;
+    margin-bottom: 50px;
+    
+}
+
+.cafe figure {
+    position: relative;
+ display: inline-block;
+    overflow: hidden;
+
+}
+
+.cafe figure img {
+    position: relative;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+
+.cafe figure figcaption {
+    text-align: left;
+ position: absolute;
+    z-index: 12;
+    bottom: -133px;
+    left: 0;
+    width: 640px;
+    padding: 20px;
+    background: black;
+    color: white;
+    	transition: 500ms all ease;
+    opacity: 0;	
+}
+
+	.cafe figure:hover figcaption{
+				bottom: 0px;
+				opacity: .7;
+			}
+
+.footer {
+    background: #bd998d;
+       padding: 10px;
+   text-align: center;
+    margin-top: 50px;
+}
+
+.footer ul li {
+    list-style: none;
+        width: 48px;
+    height: 48px;
+     display: inline-block;
+}
+
+.footer ul li a {
+     display: block;
+        height: 48px;
+      text-indent: -500px;
+    overflow: hidden;
+}
+
+#facebook {
+    background: url(../imagenes/fb_completo1.jpg) center top no-repeat;
+   }
+
+#twitter {
+    background: url(../imagenes/tw_completo1.jpg) center top no-repeat;
+}
+
+#instagram {
+    background: url(../imagenes/ig_completo1.jpg) center top no-repeat;
+}
+
+#facebook:hover {
+    background-position: center bottom;
+}
+
+#twitter:hover {
+    background-position: center bottom;
+}
+
+#instagram:hover {
+    background-position: center bottom;
+}
+
+
+
+@keyframes entrada {
+    0% {
+        opacity: 0;
+transform: translate(-50px);
+      
+    
+    100% {
+        opacity: 1;
+        transform: translate(0);
+        }
+    }
+}
+
+@keyframes entrada2 {
+    0% {
+        opacity: 0;
+        transform: translate(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes entrada3 {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+/* quienes somos */
+
+.empresa1 {
+    background-color: #bd998d;
+    width: 400px;
+    height: 350px;
+        padding: 30px;
+    margin-left: 50px;
+    color:  #57302C;
+              float: left;
+    animation: entrada4 8s;
+}
+
+.empresa1:hover {
+    background-color: #a08278;
+}
+
+p {
+    line-height : 23px;
+}
+
+.empresa2 {
+      background-color: #bd998d;
+    width: 400px;
+    height: 600px;
+    padding: 30px;
+    margin-top: 50px;
+    color:  #57302C;
+              float: left;
+    animation: entrada5 2s;
+}
+
+ .empresa2:hover {
+    background-color: #a08278;
+}
+
+.contacto {
+    width: 400px;
+    height: 245px;
+      background: rgba(87, 48, 44, .6);
+    clear: left;
+    color: white;
+    padding: 30px;
+}
+
+.contacto ul li {
+      list-style: none;
+       transition: all 500ms ease;
+}
+.contacto ul li:hover {
+       font-size: 25px;
+}
+
+h3 {
+    color: white;
+    font-family: 'bebas_kairegular';
+    padding: 5px 0 20px 0;
+    font-size: 25px;
+}
+
+@keyframes entrada4 {
+    0% {
+        opacity: 0;
+        transform: translate(-50px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes entrada5 {
+    0% {
+        opacity: 0;
+        transform: translate(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+
+
+/* menu */
+
+.banner1 {
+width: 700px;
+border: 5px solid #bd998d;
+    line-height: 0;
+           overflow: hidden;
+    margin: auto;
+}
+
+.banner1 ul {
+    width: 400%;
+     position: relative;
+      animation: mover 10s ease infinite;
+}
+
+.banner1 ul li {
+       display: inline-block;
+       width: 25%;
+}
+
+       @keyframes mover {
+            0% {
+                left: 0;
+            }
+            15% {
+                left: 0;
+            }
+            25% {
+                left: -100%;
+            }
+            40% {
+                left: -100%;
+            }
+            50% {
+                left: -200%;
+            }
+            65% {
+                left: -200%;
+            }
+            75% {
+                left: -300%;
+            }
+            90% {
+                left: -300%;
+            }
+            100% {
+                left: 0;
+            }
+        }
+
+.comida {
+    overflow: hidden;
+}
+
+.cimagenes {
+margin-left: 8%; 
+margin-right: 8%;
+    animation: entrada6 2s;
+}
+
+.comida figure {
+width: 250px;
+    height: 330px;
+    float: left;
+            background: rgba(87, 48, 44, .6);
+    margin: 10px;
+    border: 5px #bd998d solid;
+    color: white;
+    text-align: center;
+}
+
+.comida figure:hover {
+    background: #57302C;
+    border: 5px #57302C solid;
+        transition: 500ms 80ms all ease-in-out;
+}
+
+.comida h2 {
+    width: 50%;
+    height: 25px;
+    background-color: #bd998d;
+    text-align: center;
+    color: #57302C;
+    margin: 20px 0 20px 0;
+    animation: entrada7 2s;
+}
+
+@keyframes entrada6 {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes entrada7 {
+    0% {
+        opacity: 0;
+        transform: translate(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+
+
